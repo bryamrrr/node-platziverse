@@ -1,5 +1,3 @@
-import { Agent } from 'http';
-
 'use strict'
 
 const test = require('ava')
@@ -64,7 +62,7 @@ test.beforeEach(async () => {
 })
 
 test.afterEach(() => {
-  sandbox && sinon.sandbox.restore
+  sandbox && sinon.sandbox.restore()
 })
 
 test('Agent', t => {
